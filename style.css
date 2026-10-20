@@ -12,8 +12,9 @@ a:focus-visible,button:focus-visible{outline:3px solid #d57125;outline-offset:6p
 .site-header{height:116px;display:flex;align-items:center;justify-content:space-between}
 .logo{display:block;flex-shrink:0;mix-blend-mode:multiply}
 .logo img{width:146px;height:auto;display:block}
+.site-header .logo img{width:184px}
 nav{display:flex;align-items:center;gap:38px;font-size:14px}
-nav a{padding:12px 0}
+nav a{padding:12px 0;white-space:nowrap}
 nav a:hover{color:var(--green)}
 .nav-contact{border:1px solid #b6c9b9;border-radius:30px;padding:12px 20px;display:flex;gap:28px;align-items:center}
 .nav-contact span{font-size:19px}
@@ -84,6 +85,8 @@ h3{font-size:29px;letter-spacing:-.4px;margin:0}
 .studio-copy h2{margin-bottom:24px}
 .studio-copy>p:not(.eyebrow){font-size:14px;line-height:1.9;color:var(--muted);margin-bottom:15px}
 .studio-copy strong{color:var(--ink);font-weight:600}
+.studio-video-link{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.studio-video-link:hover{color:var(--ink)}
 .studio-copy .studio-signoff{color:var(--ink)!important;font-weight:600;font-size:13px!important;margin-top:23px;display:flex;gap:16px;align-items:center}
 .brand-dots{display:flex;gap:5px}.brand-dots i{width:7px;height:7px;border-radius:50%;background:var(--orange)}.brand-dots i+i{background:#68b84c}
 .contact{background:#e9eedf;border-block:1px solid #dbe2d0}
@@ -96,7 +99,7 @@ h3{font-size:29px;letter-spacing:-.4px;margin:0}
 .email-link span{font-size:28px}
 footer{min-height:126px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .footer-logo img{width:100px}
-footer p,footer>span{font-size:10px;color:var(--muted);margin:0}
+footer p,footer>span{font-size:12px;color:var(--muted);margin:0}
 .skip{position:absolute;left:20px;top:-80px;background:var(--ink);color:white;padding:15px;z-index:10}.skip:focus{top:10px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 @media(min-width:1400px){.hero{padding-top:65px;padding-bottom:80px}}
@@ -105,3 +108,5 @@ footer p,footer>span{font-size:10px;color:var(--muted);margin:0}
 @media(max-width:420px){nav{gap:13px}.nav-contact{padding:9px 11px}.nav-contact span{display:none}.strip-inner>span{font-size:14px;gap:7px}.strip-inner i{font-size:19px}.strip-inner{gap:8px}.studio-copy .studio-signoff{font-size:12px!important;gap:9px}.art-caption{margin:0;font-size:9px}}
 @media(max-width:360px){.strip-inner>span{font-size:12px;gap:5px}.strip-inner i,.strip-inner .connect-symbol{font-size:17px}.orbit{transform:translate(-50%,-50%)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+@media(max-width:760px){.site-header .logo img{width:144px}}
+@media(max-width:360px){.site-header .logo img{width:112px}.site-header nav{gap:8px}.site-header .nav-contact{padding:9px 8px}}
