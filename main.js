@@ -2,7 +2,16 @@ const moveButton = document.querySelector('#move-button');
 const vanes = [...document.querySelectorAll('.kinetic-board .vane')];
 const orbitBall = document.querySelector('.orbit-ball');
 let turns = 0;
+const hintObserver = new IntersectionObserver((entries) => {
+  if (entries.some(entry => entry.isIntersecting)) {
+    if (turns === 0) moveButton.classList.add('motion-hint');
+    hintObserver.disconnect();
+  }
+}, { threshold: 0.75 });
+hintObserver.observe(moveButton);
 moveButton.addEventListener('click', () => {
+  moveButton.classList.remove('motion-hint');
+  hintObserver.disconnect();
   turns += 1;
   const angles = [-30 + turns * 90, -30 - turns * 75, 24 + turns * 100];
   vanes.forEach((vane, index) => { vane.style.transform = `rotate(${angles[index]}deg)`; });

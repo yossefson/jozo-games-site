@@ -39,11 +39,16 @@ h1 span{color:var(--green)}
 .vane-blue{transform:rotate(-30deg)}
 .vane-green{transform:rotate(24deg)}
 .orbit-ball{transform-origin:319px 271px;transition:transform 1.6s cubic-bezier(.34,.05,.16,1)}
-.art-caption{display:flex;align-items:center;justify-content:space-between;margin:2px 15px 0 40px;font-size:10px;letter-spacing:1px;color:var(--muted)}
+.art-caption{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between;margin:2px 15px 0 40px;font-size:10px;letter-spacing:1px;color:var(--muted)}
 .art-caption>span{text-transform:uppercase}
-.art-caption button{display:flex;align-items:center;gap:8px;border:0;background:transparent;padding:11px 0 11px 12px;color:var(--ink);font-size:12px;cursor:pointer}
+.art-caption button{display:flex;align-items:center;gap:8px;margin-left:auto;border:1px solid #b6c9b9;border-radius:28px;background:#e9eedf;padding:10px 16px;min-height:44px;color:var(--ink);font-size:12px;cursor:pointer;transition:background .2s,border-color .2s}
+.art-caption button:hover{background:#dce8d4;border-color:var(--green)}
 .move-icon{font-size:23px;transition:transform .3s}
 .art-caption button:hover .move-icon{transform:rotate(90deg)}
+.art-caption button.motion-hint{animation:move-button-hint 3.5s ease-out .7s 3}
+.motion-hint .move-icon{animation:move-icon-hint 3.5s ease-in-out .7s 3}
+@keyframes move-button-hint{0%,45%,100%{box-shadow:0 0 0 0 #23745b00}12%{box-shadow:0 0 0 5px #23745b18}35%{box-shadow:0 0 0 10px #23745b00}}
+@keyframes move-icon-hint{0%,45%,100%{transform:rotate(0)}12%{transform:rotate(-20deg)}30%{transform:rotate(80deg)}}
 .motion-strip{border-block:1px solid var(--line);background:#eef1e6}
 .strip-inner{display:flex;justify-content:space-between;align-items:center;padding-block:24px}
 .strip-inner>span{display:flex;align-items:center;gap:55px;font-family:Fredoka,Arial,sans-serif;font-size:22px;font-weight:400}
