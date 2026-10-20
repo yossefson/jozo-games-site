@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6ef">
+  <title>JoZo Games | Play in motion</title>
+  <meta name="description" content="JoZo Games is an independent game design studio from the inventor of Orbito. Thoughtful puzzles, playful mechanisms, and the joy of setting things in motion.">
+  <meta property="og:title" content="JoZo Games | Play in motion">
+  <meta property="og:description" content="Small moves. Wonderful possibilities. Discover an independent studio making games that move you to think.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jozo.games">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fredoka.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="logo" href="#top" aria-label="JoZo Games home"><img src="assets/jozo-logo.svg" alt="JoZo Games" width="160" height="68"></a>
+    <nav aria-label="Main navigation">
+      <a href="#games">Our games</a>
+      <a href="#studio">The studio</a>
+      <a class="nav-contact" href="mailto:hello@jozo.games">Say hello <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Independent game design studio</p>
+        <h1 id="hero-title">A little move.<br>A whole new<br><span>possibility.</span></h1>
+        <p class="intro">We make games that move you to think.<br>Rotate, push, connect. And see what happens next.</p>
+        <a class="button" href="#games">Explore our games <span aria-hidden="true">↘</span></a>
+        <div class="hero-note"><span class="mini-orbit" aria-hidden="true"></span> A playful mind. A moving world.</div>
+      </div>
+      <div class="hero-art">
+        <svg class="kinetic-board" viewBox="0 0 600 570" role="img" aria-labelledby="kinetic-title kinetic-desc">
+          <title id="kinetic-title">A small world of playful mechanisms</title>
+          <desc id="kinetic-desc">Orange, blue, and green vanes on a softly rounded board, with an orbiting orange ball. An abstract study inspired by our games.</desc>
+          <defs>
+            <pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse"><circle cx="22" cy="22" r="2.4" fill="#c7d8cd"/></pattern>
+            <filter id="board-shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="22" stdDeviation="17" flood-color="#315849" flood-opacity=".12"/></filter>
+            <filter id="piece-shadow" x="-60%" y="-60%" width="220%" height="250%"><feDropShadow dx="0" dy="8" stdDeviation="4" flood-color="#214c40" flood-opacity=".17"/></filter>
+            <linearGradient id="board-tone" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#eaf1e8"/></linearGradient>
+          </defs>
+          <circle cx="319" cy="271" r="238" fill="none" stroke="#d4dfd3" stroke-width="1" stroke-dasharray="3 8"/>
+          <path d="M501 117a238 238 0 0 1 53 69m-14-8 15 10 1-19" fill="none" stroke="#93ad9e" stroke-width="1.5" stroke-linecap="round"/>
+          <g transform="translate(302 282) rotate(-12)">
+            <rect x="-205" y="-197" width="410" height="410" rx="60" fill="#d8e5d5" transform="translate(0 9)"/>
+            <rect x="-205" y="-197" width="410" height="410" rx="60" fill="url(#board-tone)" stroke="#fff" stroke-width="2" filter="url(#board-shadow)"/>
+            <rect x="-184" y="-176" width="368" height="368" rx="40" fill="url(#dots)"/>
+            <circle cx="-81" cy="-76" r="72" fill="none" stroke="#e9c6a3" stroke-dasharray="4 6"/>
+            <circle cx="74" cy="-7" r="112" fill="none" stroke="#bed0dd" stroke-dasharray="4 6"/>
+            <circle cx="-38" cy="100" r="88" fill="none" stroke="#bfd6c4" stroke-dasharray="4 6"/>
+            <g transform="translate(-81 -76)"><g class="vane vane-orange" filter="url(#piece-shadow)"><rect x="-12" y="-72" width="24" height="144" rx="12" fill="#f6812c"/><rect x="-7" y="-66" width="7" height="125" rx="3.5" fill="#ffb16b" opacity=".5"/></g><circle r="13" fill="#ffefe0"/><circle r="5" fill="#cb6126"/></g>
+            <g transform="translate(74 -7)"><g class="vane vane-blue" filter="url(#piece-shadow)"><rect x="-112" y="-13" width="224" height="26" rx="13" fill="#3684ae"/><rect x="-103" y="-9" width="199" height="7" rx="3.5" fill="#72afcc" opacity=".6"/></g><circle r="14" fill="#e7f1f6"/><circle r="5.5" fill="#256384"/></g>
+            <g transform="translate(-38 100)"><g class="vane vane-green" filter="url(#piece-shadow)"><rect x="-88" y="-13" width="176" height="26" rx="13" fill="#32976c"/><rect x="-79" y="-9" width="151" height="7" rx="3.5" fill="#73ba88" opacity=".6"/></g><circle r="14" fill="#e1f0df"/><circle r="5.5" fill="#247652"/></g>
+            <circle cx="125" cy="139" r="17" fill="#f3ead1" stroke="#c4b27a" stroke-width="2"/><circle cx="125" cy="139" r="6" fill="#b69d51"/>
+          </g>
+          <g class="orbit-ball"><circle cx="92" cy="137" r="17" fill="#f6812c" filter="url(#piece-shadow)"/><circle cx="87" cy="132" r="5" fill="#ffc38a" opacity=".75"/></g>
+          <circle cx="507" cy="447" r="11" fill="#64b849"/>
+          <path d="M73 421q-22 3-28-18m-4 9 4-12 11 5" fill="none" stroke="#648c76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="art-caption"><span>01 / A study in motion</span><button id="move-button" type="button" aria-label="Set the illustration in motion"><span class="move-icon" aria-hidden="true">↻</span> Make a move</button></div>
+        <p id="motion-status" class="sr-only" role="status"></p>
+      </div>
+    </section>
+    <div class="motion-strip" aria-label="Rotate. Push. Connect. Discover.">
+      <div class="wrap strip-inner"><span>Rotate <i aria-hidden="true">↻</i></span><span>Push <i aria-hidden="true">→</i></span><span>Connect <i class="connect-symbol" aria-hidden="true">○○</i></span><span>Discover <i aria-hidden="true">✳</i></span></div>
+    </div>
+    <section class="games wrap" id="games" aria-labelledby="games-title">
+      <div class="section-heading"><div><p class="eyebrow">Ideas you can play with</p><h2 id="games-title">Different games.<br>The same curiosity.</h2></div><p>A turn becomes a chain reaction.<br>A push opens a new path.<br>Our games begin where movement meets possibility.</p></div>
+      <div class="game-grid">
+        <article class="game">
+          <div class="game-visual vane-visual">
+            <span class="visual-label">Connect the unexpected</span>
+            <svg viewBox="0 0 540 340" role="img" aria-labelledby="vane-title"><title id="vane-title">Vane Chain: three colorful vanes connected by their overlapping reach</title>
+              <defs><pattern id="game-dots" width="36" height="36" patternUnits="userSpaceOnUse"><circle cx="18" cy="18" r="2" fill="#cfdbcf"/></pattern></defs>
+              <rect x="60" y="45" width="420" height="260" rx="120" fill="url(#game-dots)" transform="rotate(-8 270 170)"/>
+              <g fill="none" stroke-dasharray="3 6"><circle cx="150" cy="180" r="67" stroke="#dfbd98"/><circle cx="284" cy="130" r="100" stroke="#b2c9d6"/><circle cx="365" cy="234" r="78" stroke="#abcbb7"/></g>
+              <g transform="translate(150 180) rotate(30)"><rect x="-67" y="-10" width="134" height="25" rx="12" fill="#d9be9e"/><rect x="-67" y="-15" width="134" height="23" rx="11.5" fill="#f6812c"/><circle cy="-3" r="10" fill="#fff0dc"/><circle cy="-3" r="4" fill="#cd6326"/></g>
+              <g transform="translate(284 130) rotate(-22)"><rect x="-100" y="-10" width="200" height="25" rx="12" fill="#a8c2cb"/><rect x="-100" y="-15" width="200" height="23" rx="11.5" fill="#3684ae"/><circle cy="-3" r="10" fill="#e8f3f7"/><circle cy="-3" r="4" fill="#256384"/></g>
+              <g transform="translate(365 234) rotate(-43)"><rect x="-78" y="-10" width="156" height="25" rx="12" fill="#a8c4ad"/><rect x="-78" y="-15" width="156" height="23" rx="11.5" fill="#32976c"/><circle cy="-3" r="10" fill="#e5f4e7"/><circle cy="-3" r="4" fill="#247652"/></g>
+            </svg>
+            <span class="visual-footer">A puzzle of cause & effect <span aria-hidden="true">↗</span></span>
+          </div>
+          <div class="game-title"><h3>Vane Chain</h3><span class="tag">In development</span></div>
+          <p>Place the vanes. Connect their reach. Set off a chain of motion that travels from the highest vane all the way down to the bell.</p>
+          <p class="game-category">Spatial thinking <span aria-hidden="true">·</span> Chain reactions</p>
+        </article>
+        <article class="game">
+          <div class="game-visual round-visual">
+            <span class="visual-label">Find a different way around</span>
+            <svg viewBox="0 0 540 340" role="img" aria-labelledby="round-title"><title id="round-title">Roundabout: concentric paths, curved pushers, and a disc finding its way</title>
+              <g transform="translate(270 176) rotate(-15)">
+                <circle r="132" fill="#f7f9f4" stroke="#d6e2d7" stroke-width="2"/>
+                <g fill="none" stroke="#d2ded3" stroke-width="1.5"><circle r="107"/><circle r="76"/><circle r="45"/></g>
+                <path d="M-96-47A107 107 0 0 1 36-101" fill="none" stroke="#3684ae" stroke-width="17" stroke-linecap="round"/>
+                <path d="M66 37A76 76 0 0 1-25 72" fill="none" stroke="#32976c" stroke-width="17" stroke-linecap="round"/>
+                <path d="M-39 23A45 45 0 0 1-35-28" fill="none" stroke="#f6812c" stroke-width="15" stroke-linecap="round"/>
+                <path d="M68-73 90-53 60-46Z" fill="#3684ae"/>
+                <path d="M-47 64-66 40-35 35Z" fill="#32976c"/>
+                <circle cx="96" cy="47" r="12" fill="#f6812c"/><circle cx="93" cy="43" r="3.5" fill="#ffc58c"/>
+                <g transform="translate(24 -38)" stroke="#173b3d" stroke-width="2"><circle r="12" fill="none"/><path d="m-11-11 22 22m0-22-22 22"/></g>
+                <circle r="7" fill="#d2dfd2"/>
+              </g>
+              <path d="M100 278a150 150 0 0 1-24-60m-5 9 5-12 9 10M441 75a150 150 0 0 1 25 60m5-9-5 12-9-10" fill="none" stroke="#7d9d8f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visual-footer">A new turn in every puzzle <span aria-hidden="true">↻</span></span>
+          </div>
+          <div class="game-title"><h3>Roundabout</h3><span class="tag">In development</span></div>
+          <p>Turn the maze, move the disc. Use pushers and deflectors to shift between circular paths and discover your way to the goal.</p>
+          <p class="game-category">Rotating mazes <span aria-hidden="true">·</span> Shifting perspectives</p>
+        </article>
+      </div>
+    </section>
+    <section class="studio wrap" id="studio" aria-labelledby="studio-title">
+      <div class="studio-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><span class="studio-ball orange-ball"></span><span class="studio-ball green-ball"></span><span class="studio-center">↗</span><span class="studio-art-note">Always a new angle.</span></div>
+      <div class="studio-copy"><p class="eyebrow">The mind behind the moves</p><h2 id="studio-title">Serious about<br>being playful.</h2><p>JoZo Games is an independent studio from the inventor of <strong>Orbito</strong>. Movement has always been at the heart of our ideas, from the tabletop to the screen.</p><p>We love a simple rule that leads somewhere surprising. A satisfying mechanism. That quiet moment when something clicks, and you just have to try one more move.</p><p class="studio-signoff">Small moves. Wonderful possibilities.<span class="brand-dots" aria-hidden="true"><i></i><i></i></span></p></div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Let's set something in motion</p><h2 id="contact-title">Good things start<br>with a hello.</h2><p>Curious about our games? Have an idea or a collaboration in mind? <br>We'd love to hear from you.</p></div><a class="email-link" href="mailto:hello@jozo.games">hello@jozo.games <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><a class="logo footer-logo" href="#top" aria-label="JoZo Games, back to top"><img src="assets/jozo-logo.svg" alt="JoZo Games" width="125" height="53" loading="lazy"></a><p>Thoughtfully made. Playfully moved.</p><span>© 2026 JoZo Games</span></footer>
+</body>
+</html>
